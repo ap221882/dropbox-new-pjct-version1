@@ -10,44 +10,67 @@
 </head>
 
 <body>
-    <!-- start of navbar -->
-    <nav class="navbar clearfix">
+    <!-- start of header -->
+    <header class="header clearfix">
         <!-- logo -->
-        <img src="./images/download.png" alt="logo" class="nav-icon">
+        <div class="website-logo-container">
+            <img src="./images/download.png" alt="logo" class="nav-icon">
+        </div>
         <!-- end of logo -->
-        <h1 class="nav-heading">Dropbox</h1>
+
+        <div class="app-title">Dropbox</div>
+        <div class="get-started">Get started &#8594;</div>
+        <div class="signin">Sign in</div>
+
         <!-- list -->
-        <ul class="nav-list clearfix">
-            <li class="nav-item nav-item-right">Why Dropbox?</li>
-            <li class="nav-item nav-item-right">Features</li>
-            <li class="nav-item nav-item-right">Plans & pricing</li>
-            <li class="nav-item nav-item-left">Support</li>
-            <li class="nav-item nav-item-left">Contact</li>
-        </ul>
+        <nav class="navbar">
+            <!-- <ul class="nav-list clearfix"> -->
+            <ul class="nav-list ">
+                <li class="nav-item nav-item-left">Why Dropbox?</li>
+                <li class="nav-item nav-item-left">Features</li>
+                <li class="nav-item nav-item-left">Plans & pricing</li>
+                <li class="nav-item nav-item-right">Support</li>
+                <li class="nav-item nav-item-right">Contact</li>
+            </ul>
+        </nav>
         <!-- end of list -->
-        <h4 class="signin">Sign in</h4>
-        <h4 class="get-started">Get started &#8594;</h4>
-    </nav>
-    <!-- end of navbar -->
-    <!-- header -->
-    <header class="header">
-        <h1>Store, Share, Collaborate and more with Dropbox</h1>
     </header>
-    <!--end of header -->
+    <!-- end of header -->
+
     <!-- uses -->
-    <section class="section-center clearfix">
-        <!-- article -->
-        <article class="use-article">
-            For work
-        </article>
-        <!-- end of article -->
-        <!-- article -->
-        <article class="use-article">
-            For personal use
-        </article>
-        <!-- end of article -->
-    </section>
-    <!-- end of uses -->
+    <main class="main">
+        <!-- heading -->
+        <div class="heading">
+            <h1>Store, Share, Collaborate and
+                <br> more with Dropbox
+            </h1>
+        </div>
+        <!--end of heading -->
+        <section class="section-center clearfix">
+            <!-- article -->
+            <article class="use-article">
+                <h3 class="use-heading">For work</h3>
+                <p class="use-text">Dropbox keeps you or your team in sync by providing a centralised place to securely
+                    store documents, manage data access
+                    and work together on projects.</p>
+                <div class="use-button">Try for free <span>&#8594;</span></div>
+                <div class="use-img-container"><img src="./images/use-img-1.svg" alt="use-1"></div>
+            </article>
+            <!-- end of article -->
+            <!-- article -->
+            <article class="use-article">
+                <h3 class="use-heading">For personal use</h3>
+                <p class="use-text">Keep everything important to you and your family, from photos to sensitive
+                    documents, shareable and safe.
+                </p>
+                <div class="use-button">Get started <span>&#8594;</span></div>
+                <div class="use-img-container"><img src="./images/use-img-2.svg" alt="use-2"></div>
+            </article>
+            <!-- end of article -->
+        </section>
+        <!-- end of uses -->
+    </main>
+
     <!-- features section -->
     <section class="feature-section">
         <div class="feature-heading">
