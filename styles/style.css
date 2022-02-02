@@ -36,6 +36,7 @@ img {
   width: 85vw;
   margin: 0 auto;
   max-width: 1300px;
+  height: 60%;
 }
 .navbar {
   height: 47px;
@@ -80,7 +81,7 @@ img {
   display: inline-block;
   font-size: 1rem;
   font-weight: var(--fw-thin);
-  padding: 0.8rem;
+  padding: 0.7rem;
 }
 .nav-item-left {
   float: left;
@@ -109,7 +110,8 @@ img {
 /* ===============================  */
 .main {
   background-color: var(--clr-coconut);
-  height: 100vh;
+  height: 120vh;
+  margin-bottom: 11rem;
 }
 .heading {
   height: 40%;
@@ -119,14 +121,62 @@ img {
   height: 100%;
   margin: 0 auto;
   text-align: center;
-  padding: 5rem 0;
+  padding: 7rem 0;
+  /* padding-top: rem; */
+  /* font-size: 2.2rem; */
 }
 
 .use-article {
   float: left;
   width: 50%;
   background-color: var(--clr-white);
+  margin-top: 3rem;
+  height: 80%;
+}
+.use-article-right {
+  border-left: 0.1px solid rgba(0, 0, 0, 0.2);
+}
+.use-text {
+  max-width: 30rem;
 }
 .use-img-container {
   background-color: #eee9e2;
+  height: 50%;
+}
+.use-img-container img {
+  height: 12rem;
+}
+.use-heading {
+  padding: 0.75rem 0.5rem;
+  letter-spacing: 0.05rem;
+  font-size: 1.5rem;
+}
+.use-text {
+  height: 5rem;
+  padding: 0.75rem 0.5rem;
+}
+.use-button {
+  height: 17%;
+  padding-top: 1.2rem;
+  padding-left: 0.5rem;
+  background-color: var(--clr-blue);
+  color: var(--clr-white);
+  margin: 0.5rem 0.5rem;
+  margin-right: 3rem;
+}
+.use-button span {
+  display: block;
+  float: right;
+  padding-right: 3rem;
+  padding-bottom: 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+/* ==============================
+features
+============================== */
+.feature-section {
+  height: 100vh;
+  background-color: var(--clr-dark);
 }
