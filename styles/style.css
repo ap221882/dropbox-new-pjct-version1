@@ -36,7 +36,7 @@ img {
   width: 85vw;
   margin: 0 auto;
   max-width: 1300px;
-  height: 60%;
+  height: 120vh;
 }
 .navbar {
   height: 47px;
@@ -131,7 +131,7 @@ img {
   width: 50%;
   background-color: var(--clr-white);
   margin-top: 3rem;
-  height: 80%;
+  height: 60vh;
 }
 .use-article-right {
   border-left: 0.1px solid rgba(0, 0, 0, 0.2);
@@ -141,10 +141,11 @@ img {
 }
 .use-img-container {
   background-color: #eee9e2;
-  height: 50%;
+  height: 30vh;
 }
 .use-img-container img {
-  height: 12rem;
+  height: 100%;
+  object-fit: cover;
 }
 .use-heading {
   padding: 0.75rem 0.5rem;
@@ -156,7 +157,7 @@ img {
   padding: 0.75rem 0.5rem;
 }
 .use-button {
-  height: 17%;
+  height: 4rem;
   padding-top: 1.2rem;
   padding-left: 0.5rem;
   background-color: var(--clr-blue);
