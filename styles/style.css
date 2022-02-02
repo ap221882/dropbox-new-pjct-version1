@@ -178,6 +178,36 @@ img {
 features
 ============================== */
 .feature-section {
-  height: 100vh;
+  height: 180vh;
   background-color: var(--clr-dark);
+  color: var(--clr-coconut);
+  margin: 3rem 0;
+}
+.feature-img {
+  width: 3rem;
+}
+.feature-heading {
+  height: 20rem;
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  margin-bottom: -4rem;
+}
+.feature-text {
+  max-width: 20rem;
+}
+.feature-item {
+  width: 33%;
+  height: 12rem;
+  float: left;
+  margin-top: 2rem;
+}
+
+/* ===============================
+collab section
+=============================== */
+.collab-section {
+  background-color: var(--clr-coconut);
+  height: 140vw;
+  margin-top: -4rem;
 }
