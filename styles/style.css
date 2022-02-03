@@ -13,7 +13,7 @@
   --clr-white: #fff;
   --transition: all 0.3s linear;
 }
-
+/* Global styles */
 * {
   /* border: 1px solid red; */
   margin: 0;
@@ -36,73 +36,68 @@ img {
   width: 85vw;
   margin: 0 auto;
   max-width: 1300px;
-  height: 120vh;
+  /* height: 120vh; */
+  padding-bottom: 4rem;
 }
+
+/* ================================
+navbar
+================================ */
 .navbar {
-  height: 47px;
+  display: inline-block;
 }
 .website-logo-container {
-  height: 100%;
-  width: 47px;
-  /* width: 10%; */
-  float: left;
+  width: 52px;
+  display: inline-block;
 }
 .app-title {
-  float: left;
-  padding: 0.5rem 0.7rem;
   font-weight: var(--fw-bold);
+  display: inline-block;
   font-size: 1.3rem;
 }
-.get-started {
-  float: right;
-  background: var(--clr-blue);
-  color: var(--clr-white);
-  margin: 0.1rem;
-  font-weight: var(--fw-medium2);
-  height: 2.2rem;
-  margin: 0.5rem 0;
-  width: 15%;
-  padding: 0.3rem;
-  text-align: center;
-}
-.signin {
-  float: right;
-  height: 100%;
-  padding: 0.8rem;
-}
-.nav-icon {
-  height: 100%;
-  /* height: 3rem; */
-}
-/* nav-heading {
-  font-weight: ;
-} */
-.nav-item {
-  display: inline-block;
-  font-size: 1rem;
-  font-weight: var(--fw-thin);
-  padding: 0.7rem;
-}
-.nav-item-left {
+.left-container {
   float: left;
 }
-.nav-item-right {
+.right-container {
   float: right;
 }
-.header h4,
-.header div {
+.get-started {
+  background: var(--clr-blue);
+  color: var(--clr-white);
+  font-weight: var(--fw-medium2);
+  text-align: center;
+  margin-top: 3px;
+}
+.signin {
+  display: inline-block;
+  padding-top: 1px;
+  margin-top: 1px;
+}
+.nav-list {
   display: inline-block;
 }
-/* .navbar { */
-/* display: inline-block; */
-/* width: 74%; */
-/* } */
-.header {
-  width: 100vw;
-  height: 3rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+.nav-item {
+  display: inline-block;
+  padding: 0.75rem 0.5rem;
+  list-style-type: none;
 }
-/* .nav-title {
+.nav-item-left {
+  /* float: left; */
+}
+.nav-item-right {
+  /* float: right; */
+}
+.header {
+  height: 3.35rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 0 1px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  position: relative;
+}
+
+/* @media screen and (max-width:1190px){
+  
 } */
 
 /* ===============================*/
@@ -110,38 +105,40 @@ img {
 /* ===============================  */
 .main {
   background-color: var(--clr-coconut);
-  height: 120vh;
-  margin-bottom: 11rem;
+  /* height: 120vh; */
+  /* margin-bottom: 11rem; */
 }
 .heading {
-  height: 40%;
+  /* height: 40%; */
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 4rem;
 }
 .heading h1 {
-  width: 50%;
-  height: 100%;
-  margin: 0 auto;
-  text-align: center;
-  padding: 7rem 0;
+  /* width: 50%; */
+  /* height: 100%; */
+  /* margin: 0 auto;
+  padding: 7rem 0; */
   /* padding-top: rem; */
-  /* font-size: 2.2rem; */
 }
 
 .use-article {
   float: left;
   width: 50%;
   background-color: var(--clr-white);
-  margin-top: 3rem;
-  height: 60vh;
+  /* margin-top: 3rem; */
+  /* height: 60vh; */
 }
 .use-article-right {
   border-left: 0.1px solid rgba(0, 0, 0, 0.2);
 }
-.use-text {
-  max-width: 30rem;
+.article-main {
+  min-height: 9rem;
 }
 .use-img-container {
   background-color: #eee9e2;
-  height: 30vh;
+  height: 100px;
+  margin: 0 0.5rem;
 }
 .use-img-container img {
   height: 100%;
@@ -150,30 +147,44 @@ img {
 .use-heading {
   padding: 0.75rem 0.5rem;
   letter-spacing: 0.05rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 .use-text {
-  height: 5rem;
-  padding: 0.75rem 0.5rem;
+  padding: 0.05rem 0.5rem;
+  max-width: 30rem;
+  margin-right: 1rem;
 }
 .use-button {
-  height: 4rem;
-  padding-top: 1.2rem;
-  padding-left: 0.5rem;
+  /* height: 4rem; */
+  /* padding-top: 1.2rem; */
+  /* padding-left: 0.5rem; */
+  padding: 1.2rem;
+  font-weight: var(--fw-medium2);
   background-color: var(--clr-blue);
   color: var(--clr-white);
   margin: 0.5rem 0.5rem;
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
 }
 .use-button span {
-  display: block;
+  /* display: block; */
   float: right;
-  padding-right: 3rem;
-  padding-bottom: 2rem;
+  /* padding-right: 3rem;
+  padding-bottom: 2rem; */
+  /* padding: -1rem; */
   font-weight: 500;
   font-size: 1rem;
 }
 
+@media screen and (max-width: 800px) {
+  .use-article {
+    float: left;
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+  .use-article-right {
+    border-left: none;
+  }
+}
 /* ==============================
 features
 ============================== */
