@@ -20,30 +20,46 @@
             </div>
             <!-- end of logo -->
         </div>
-        <div class="app-title nav-item">Dropbox</div>
+        <span class="app-title ">Dropbox</span>
 
 
         <!-- list -->
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
             <!-- <ul class="nav-list clearfix"> -->
             <ul class="nav-list ">
-                <li class="nav-item nav-item-left">Why Dropbox?</li>
-                <li class="nav-item nav-item-left">Features</li>
-                <li class="nav-item nav-item-left">Plans & pricing</li>
-                <li class="nav-item nav-item-right">Support</li>
-                <li class="nav-item nav-item-right">Contact</li>
+                <div class="nav-item-left">
+                    <li class="nav-item ">Why Dropbox?</li>
+                    <li class="nav-item ">Features</li>
+                    <li class="nav-item ">Plans & pricing</li>
+                </div>
+                <div class="nav-item-right">
+                    <li class="nav-item ">Support</li>
+                    <li class="nav-item ">Contact</li>
+                </div>
             </ul>
         </nav>
         <div class="right-container">
             <span class="signin nav-item">Sign in</span>
             <span class="get-started nav-item">Get started &#8594;</span>
+            <span id="nav-btn" class="nav-btn bars"><i class="fas fa-bars"></i></span>
+            <span id="nav-btn-cross" class="nav-btn cross"><i class="fas fa-times"></i></span>
+
         </div>
         <!-- end of list -->
     </header>
     <!-- end of header -->
-
+    <!-- navbar when screen is small -->
     <!-- uses -->
     <main class="main">
+        <!-- <nav id="navbar-mini" class="nav-small">
+            <ul>
+                <li>Why dropbox?</li>
+                <li>features</li>
+                <li>plans & pricing</li>
+                <li>support</li>
+                <li>contact</li>
+            </ul>
+        </nav> -->
         <div>
             <!-- heading -->
             <div class="heading clearfix">
@@ -272,6 +288,7 @@
                 </span></div>
         </section>
     </footer>
+    <script src="app.js"></script>
 </body>
 
 </html>
